@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guilherme | Portfólio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" type="image/png" href="img\logogm.png">
+</head>
+
+<body>
+
+  <!-- nav -->
+  <nav class="navbar">
+    <a href="#home" class="nav-logo">&lt;GuiCoder/&gt;</a>
+    <ul class="nav-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" id="mobile-menu-toggle"><i class="fas fa-bars"></i></button>
+  </nav>
+
+  <!-- capa -->
+  <section class="hero" id="home">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-content">
+      <p class="hero-greeting">Olá, eu sou</p>
+      <h1 class="hero-name">Guilherme Malagutti<span class="dot">.</span></h1>
+      <h2 class="hero-role">
+        <span class="typed-text" id="typed"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-desc">
+        Estudante de Análise e Desenvolvimento de Sistemas, gosto de criar
+        APIs robustas com <strong>Java + Spring</strong> ou <strong> Kotlin + Spring</strong>. Sempre buscando evoluir
+        e explorar novas tecnologias.
+      </p>
+      <div class="hero-btns">
+        <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+        <a href="#contato" class="btn btn-outline">Fale comigo</a>
+      </div>
+      <div class="hero-social">
+        <a href="https://github.com/GuiCoder-Dev" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/guilherme-ribeiro-malagutti-416b2a374" target="_blank"><i
+            class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-header">
+          <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
+          <span class="code-filename">Main.java</span>
+        </div>
+        <pre class="code-body"><span class="c-kw">public class</span> <span class="c-fn">Main</span> {
+  <span class="c-kw">public static void</span> <span class="c-fn">main</span>(String[] args) {
+    Developer dev = <span class="c-kw">new</span> Developer();
+    dev.<span class="c-fn">setName</span>(<span class="c-str">"Guilherme Malagutti"</span>);
+    dev.<span class="c-fn">setRole</span>(<span class="c-str">"Back-end Dev"</span>);
+    dev.<span class="c-fn">setStack</span>(List.<span class="c-fn">of</span>(
+      <span class="c-str">"Java"</span>, <span class="c-str">"Spring Boot"</span>,
+      <span class="c-str">"MySQL"</span>, <span class="c-str">"Docker"</span>
+    ));
+    dev.<span class="c-fn">buildSomethingCool</span>();
+  }
+}</pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- sobre -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <h2 class="section-title">Sobre <span class="accent">mim</span></h2>
+      <div class="sobre-grid">
+        <div class="sobre-text">
+          <p>Sou um desenvolvedor back-end em formação, cursando <strong>Análise e Desenvolvimento de Sistemas</strong>.
+            Busco construir sistemas eficientes e bem estruturados.</p>
+          <p>Atualmente me aprofundando em <strong>bancos de dados</strong>, <strong>APIs RESTful</strong> e
+            <strong>Inteligência Artificial</strong>. Acredito que código limpo e boas práticas fazem toda a diferença.
+          </p>
+          <p>Aprendiz curioso por natureza — se existe algo novo para aprender, pode ter certeza que estou explorando.
+          </p>
+          <div class="info-grid">
+            <div class="info-item"><span class="info-label">Foco</span><span>Back-end</span></div>
+            <div class="info-item"><span class="info-label">Status</span><span class="badge-available">Disponível</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- stack -->
+  <section class="section section-dark" id="habilidades">
+    <div class="container">
+      <h2 class="section-title">Linguagens & <span class="accent">Ferramentas</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon skill-java">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+          </div>
+          <span class="skill-name">Java</span>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w:75%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon skill-kotlin">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin" />
+          </div>
+          <span class="skill-name">Kotlin</span>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w:70%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon skill-spring">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring" />
+          </div>
+          <span class="skill-name">Spring Boot</span>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w:65%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon skill-mysql">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
+          </div>
+          <span class="skill-name">MySQL</span>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w:68%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon skill-docker">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
+          </div>
+          <span class="skill-name">Docker</span>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w:55%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon skill-git">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+          </div>
+          <span class="skill-name">Git</span>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w:80%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon skill-ai">
+            <i class="fas fa-robot"></i>
+          </div>
+          <span class="skill-name">IA</span>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w:60%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon skill-api">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <span class="skill-name">APIs REST</span>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w:75%"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- projetos principais -->
+  <section class="section" id="projetos">
+    <div class="container">
+      <h2 class="section-title">Projetos <span class="accent"> Principais</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-top">
+            <i class="fas fa-folder-open project-folder"></i>
+            <div class="project-links">
+              <a href="https://github.com/GuiCoder-Dev/fdmcadastros" title="GitHub" target="_blank"><i
+                  class="fab fa-github"></i></a>
+              <a href="#" title="Ver Prints" onclick="openGallery(event, 'fdmcadastros')"><i
+                  class="fas fa-images"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">FdMCadastros</h3>
+          <p class="project-desc">Um sistema web completo de cadastro de alunos e gerenciamento de mensalidades, visando
+            organizar e controlar alunos e seus pagamentos.</p>
+          <div class="project-tags">
+            <span>Kotlin</span><span>Spring
+              Boot</span><span>MySQL</span><span>JWT</span><span>React</span><span>JavaScript</span><span>API
+              RESTful</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <i class="fas fa-folder-open project-folder"></i>
+            <div class="project-links">
+              <a href="https://github.com/GuiCoder-Dev/nutspoker" title="GitHub" target="_blank"><i
+                  class="fab fa-github"></i></a>
+              <a href="#" title="Ver Prints" onclick="openGallery(event, 'nutspoker')"><i class="fas fa-images"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">NutsPoker</h3>
+          <p class="project-desc">Este projeto consiste em um site com funcionalidades para jogar o jogo de cartas
+            "Poker",
+            com um timer e um sistema de tabelas para cadastro dos jogadores.</p>
+          <div class="project-tags">
+            <span>Kotlin</span><span>Spring
+              Boot</span><span>MySQL</span><span>UUID</span><span>React</span><span>JavaScript</span><span>API
+              RESTful</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <i class="fas fa-folder-open project-folder"></i>
+            <div class="project-links">
+              <a href="https://github.com/GuiCoder-Dev/OnePieceChatAI" title="GitHub" target="_blank"><i
+                  class="fab fa-github"></i></a>
+              <a href="#" title="Ver Prints" onclick="openGallery(event, 'onepieceai')"><i
+                  class="fas fa-images"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">OnePieceAI</h3>
+          <p class="project-desc">Um chat temático de One Piece com inteligência artificial, dividido em três sessões
+            interativas.</p>
+          <div class="project-tags">
+            <span>Java</span><span>Spring
+              Boot</span><span>SpringAI</span><span>React</span><span>JavaScript</span><span>API
+              RESTful</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="projects-more">
+        <a href="https://github.com/GuiCoder-Dev" target="_blank" class="btn btn-outline">
+          Ver mais no GitHub <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- contato -->
+  <section class="section section-dark" id="contato">
+    <div class="container">
+      <h2 class="section-title">Entre em <span class="accent">Contato</span></h2>
+      <p class="contato-desc">Estou aberto a novas oportunidades, colaborações e conversas sobre tecnologia. Sinta-se à
+        vontade para me contatar através das redes abaixo.</p>
+      <div class="contato-grid">
+        <div class="contato-info">
+          <a href="https://github.com/GuiCoder-Dev" target="_blank" class="contato-icon-btn" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/guilherme-ribeiro-malagutti-416b2a374" target="_blank"
+            class="contato-icon-btn" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:guimalagutti07@gmail.com" class="contato-icon-btn" title="E-mail">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer">
+    <p>Desenvolvido por <span class="accent">Guilherme Malagutti</span> © 2026</p>
+  </footer>
+
+  <script>
+    // animação de digitação
+    const words = ["API Developer", "Dev Back-End", "Spring Boot Developer", "Java e Kotlin Developer"];
+    let wi = 0, ci = 0, deleting = false;
+    const el = document.getElementById("typed");
+    function type() {
+      const word = words[wi];
+      if (!deleting) {
+        el.textContent = word.slice(0, ++ci);
+        if (ci === word.length) { deleting = true; setTimeout(type, 1800); return; }
+      } else {
+        el.textContent = word.slice(0, --ci);
+        if (ci === 0) { deleting = false; wi = (wi + 1) % words.length; }
+      }
+      setTimeout(type, deleting ? 60 : 100);
+    }
+    type();
+
+    // animação barra de stack
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.querySelectorAll('.skill-fill').forEach(bar => {
+            bar.style.width = bar.style.getPropertyValue('--w') || bar.getAttribute('style').match(/--w:(.*?)%/)?.[1] + '%';
+            bar.classList.add('animated');
+          });
+        }
+      });
+    }, { threshold: 0.3 });
+    document.querySelectorAll('.skills-grid').forEach(g => observer.observe(g));
+
+    // mobile menu
+    document.getElementById('mobile-menu-toggle').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+
+    // ativar nav conforme o local
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      const scrollPos = window.scrollY + 150;
+
+      sections.forEach(s => {
+        if (scrollPos >= s.offsetTop) {
+          current = s.id;
+        }
+      });
+
+      if ((window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 50) {
+        current = 'contato';
+      }
+
+      document.querySelectorAll('.nav-links a').forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+      });
+    });
+
+    // galeria de imagens
+    const projectGalleries = {
+      'fdmcadastros': [
+        'img/fdmcadastro/fdmcadastro01.png',
+        'img/fdmcadastro/fdmcadastro02.png',
+        'img/fdmcadastro/fdmcadastro03.png',
+        'img/fdmcadastro/fdmcadastro04.png',
+        'img/fdmcadastro/fdmcadastro05.png'
+      ],
+      'nutspoker': [
+        'img/nutspoker/nutspoker01.png',
+        'img/nutspoker/nutspoker02.png',
+        'img/nutspoker/nutspoker03.png'
+      ],
+      'onepieceai': [
+        'img/onepieceai/onepieceai01.png',
+        'img/onepieceai/onepieceai02.png',
+        'img/onepieceai/onepieceai03.png',
+        'img/onepieceai/onepieceai04.png',
+        'img/onepieceai/onepieceai05.png',
+        'img/onepieceai/onepieceai06.png',
+        'img/onepieceai/onepieceai07.png'
+      ]
+    };
+    let currentGalleryImages = [];
+    let currentImageIndex = 0;
+
+    function openGallery(event, projectId) {
+      event.preventDefault();
+      if (!projectGalleries[projectId] || projectGalleries[projectId].length === 0) return;
+
+      currentGalleryImages = projectGalleries[projectId];
+      const modal = document.getElementById('galleryModal');
+      const indicatorsContainer = document.getElementById('galleryIndicators');
+
+      currentImageIndex = 0;
+      updateGallery();
+      modal.classList.add('show');
+      document.body.style.overflow = 'hidden';
+
+      indicatorsContainer.innerHTML = '';
+      currentGalleryImages.forEach((_, index) => {
+        const dot = document.createElement('div');
+        dot.className = 'modal-indicator' + (index === 0 ? ' active' : '');
+        dot.onclick = () => goToImage(index);
+        indicatorsContainer.appendChild(dot);
+      });
+    }
+
+    function closeGallery() {
+      const modal = document.getElementById('galleryModal');
+      modal.classList.remove('show');
+      document.body.style.overflow = '';
+    }
+
+    function updateGallery() {
+      const galleryImage = document.getElementById('galleryImage');
+      galleryImage.src = currentGalleryImages[currentImageIndex];
+      const dots = document.querySelectorAll('.modal-indicator');
+      dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentImageIndex);
+      });
+    }
+
+    function nextImage() {
+      if (currentGalleryImages.length === 0) return;
+      currentImageIndex = (currentImageIndex + 1) % currentGalleryImages.length;
+      updateGallery();
+    }
+
+    function prevImage() {
+      if (currentGalleryImages.length === 0) return;
+      currentImageIndex = (currentImageIndex - 1 + currentGalleryImages.length) % currentGalleryImages.length;
+      updateGallery();
+    }
+
+    function goToImage(index) {
+      currentImageIndex = index;
+      updateGallery();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const modal = document.getElementById('galleryModal');
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          closeGallery();
+        }
+      });
+    });
+  </script>
+
+  <div id="galleryModal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeGallery()">&times;</button>
+      <button class="modal-nav modal-prev" onclick="prevImage()"><i class="fas fa-chevron-left"></i></button>
+      <img id="galleryImage" src="" alt="Project Screenshot">
+      <button class="modal-nav modal-next" onclick="nextImage()"><i class="fas fa-chevron-right"></i></button>
+      <div class="modal-indicators" id="galleryIndicators"></div>
+    </div>
+  </div>
+</body>
+
+</html>
